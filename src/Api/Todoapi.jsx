@@ -5,7 +5,7 @@ const Context = createContext("No Data Available Here.");
 const getValueLocalStorage = () => {
   let val = localStorage.getItem("item");
   // console.log(typeof val);
-  if (val !== "") {
+    if (typeof(val)== 'string') {
     // ! JSON.parse derived from an array, the method  that convert JSON string into javascript object.
     let vals = JSON.parse(localStorage.getItem("item")); // '[]' ==> []
     // console.log(vals);
